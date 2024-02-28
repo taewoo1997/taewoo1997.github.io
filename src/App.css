@@ -28,6 +28,20 @@
   color: #61dafb;
 }
 
+.dropdown-container {
+  display: flex;
+  align-items: center; /* 수직 중앙 정렬 */
+  margin-bottom: 10px; /* 드롭다운 간의 여백 */
+}
+
+.dropdown {
+  margin-right: 10px; /* 드롭다운과 텍스트 사이의 여백 */
+}
+
+.selected-text {
+  flex: 1; /* 남은 공간을 모두 차지하도록 함 */
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
