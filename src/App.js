@@ -60,7 +60,7 @@ function App() {
           <option value="option2">두 번째 옵션 2</option>
           <option value="option3">두 번째 옵션 3</option>
       </select>
-      <p className="selected-text">출발지: {selectedValue1 ? `당신은 ${selectedValue1}를 선택했습니다.` : '선택된 것이 없습니다.'}</p>
+      <p className="selected-text">도착지: {selectedValue2 ? `당신은 ${selectedValue2}를 선택했습니다.` : '선택된 것이 없습니다.'}</p>
     </div>
 
       <div>

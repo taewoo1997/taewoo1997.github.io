@@ -1,5 +1,8 @@
 .App {
-  text-align: center;
+  text-align: center; /* 텍스트 중앙 정렬 */
+  display: flex;
+  flex-direction: column; /* 자식 요소들을 세로로 정렬 */
+  align-items: center; /* 자식 요소들을 가로 방향으로 중앙 정렬 */
 }
 
 .App-logo {
@@ -30,16 +33,21 @@
 
 .dropdown-container {
   display: flex;
-  align-items: center; /* 수직 중앙 정렬 */
+  justify-content: center; /* 드롭다운과 텍스트를 가로 방향으로 중앙 정렬 */
   margin-bottom: 10px; /* 드롭다운 간의 여백 */
 }
 
 .dropdown {
-  margin-right: 10px; /* 드롭다운과 텍스트 사이의 여백 */
+  margin-right: 10px; /* 드롭다운과 텍스트 사이의 여백을 조절 */
+  padding: 5px 10px; /* 안쪽 여백을 조절하여 드롭다운의 높이를 조절 */
+  border: 1px solid #ccc; /* 경계선의 두께와 색상을 조절 */
+  /* height: 30px; 드롭다운의 높이를 고정시킬 경우 사용 */
 }
 
+
 .selected-text {
-  flex: 1; /* 남은 공간을 모두 차지하도록 함 */
+  display: inline-block; /* 텍스트를 inline 요소로 만들어 정렬 */
+  margin-left: 10px; /* 텍스트와 드롭다운 사이의 여백을 조절 */
 }
 
 @keyframes App-logo-spin {
